@@ -1,24 +1,17 @@
-# README
+# property-house
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. please sign up first to view property tab
 
-Things you may want to cover:
+2. Price are sort in asc order (click the price header to sort)
 
-* Ruby version
+- search button (ransack)
 
-* System dependencies
+- pagination (kaminari)
 
-* Configuration
+- image upload(active storage)
 
-* Database creation
+- login logout (devise)
 
-* Database initialization
+- css (tailwind)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+run ```./bin/dev```
