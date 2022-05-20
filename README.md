@@ -1,13 +1,17 @@
 # property-house
 
-please sign up first to view property tab
-Price are sort in asc order (click the price header to sort)
+1. please sign up first to view property tab
 
-search button (ransack)
-pagination (kaminari)
-image upload(active storage)
-login logout (devise)
+2. Price are sort in asc order (click the price header to sort)
 
-css (tailwind)
+- search button (ransack)
+
+- pagination (kaminari)
+
+- image upload(active storage)
+
+- login logout (devise)
+
+- css (tailwind)
 
 run ```./bin/dev```
