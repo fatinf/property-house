@@ -1,0 +1,20 @@
+= form_for @property do |f|
+  - if @property.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@property.errors.count, "error")} prohibited this property from being saved:"
+      ul
+        - @property.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :name, class: "lock text-sm font-medium text-gray-700"
+    = f.text_field :name, class: "mb-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+  .field
+    = f.label :price, class: "lock text-sm font-medium text-gray-700"
+    = f.text_field :price, class: "mb-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+  .field
+    = f.label :size, class: "lock text-sm font-medium text-gray-700"
+    = f.number_field :size, class: "mb-3 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+  .field
+    = f.file_field :image
+  .actions = f.submit class:"inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
